@@ -1,0 +1,109 @@
+/* resetando a pagina*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* cor do corpo da paina*/
+body {
+    background-color: rgb(4, 11, 20);
+}
+
+
+/* caixa que engloba toda a pagina*/
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+/* header */
+.header h1 {
+    color: #b9e6f2;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-weight: 100;
+    float: left;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
+.msg span {
+    float: right;
+    color: white;
+    text-align: right;
+    padding-top: 25px;
+    font-size: 2em;
+    font-family: 'Tangerine', cursive;
+}
+
+/* icone piscando */
+.msg span:after {
+    content: "{ }";
+    margin-left: 5px;
+    opacity: 1;
+    -webkit-animation: pisca 1s infinite;
+    animation: pisca 1s infinite;
+    color: #2EAFEC;
+}
+
+@-webkit-keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* formulario e textarea */
+.editor {
+    width: 90%;
+    height: 100%;
+
+    float: left;
+    margin: 25px;
+
+}
+
+form {
+    width: 100%;
+    height: 70%;
+    border: 1px solid #2EAFEC;
+    border-radius: 10px;
+    max-width: 1110px;
+    overflow: auto;
+    position: absolute;
+}
+
+
+/* footer da pagina*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto 0px;
+    padding: 10px 0px;
+
+}
